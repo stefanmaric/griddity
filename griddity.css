@@ -651,7 +651,7 @@
   }
 }
 
-@media (--container-xl) {
+@media (--xl-viewport) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -1170,7 +1170,7 @@
   }
 }
 
-@media (--container-xl) {
+@media (--xl-viewport) {
   .flex-xl-row {
     flex-direction: row !important;
   }
