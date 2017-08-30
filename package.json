@@ -1,0 +1,28 @@
+{
+  "author": "Stefan Maric <me@stefanmaric.com> (http://stefanmaric.com)",
+  "bugs": {
+    "url": "https://github.com/stefanmaric/griddity/issues"
+  },
+  "description": "CSS grid",
+  "homepage": "https://github.com/stefanmaric/griddity#readme",
+  "keywords": [
+    "css",
+    "grid",
+    "flex",
+    "flexbox",
+    "layout"
+  ],
+  "license": "MIT",
+  "main": "griddity.css",
+  "module": "griddity.css",
+  "name": "griddity",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanmaric/griddity.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "style": "griddity.css",
+  "version": "0.1.0"
+}
