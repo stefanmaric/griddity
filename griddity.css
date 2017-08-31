@@ -3,49 +3,49 @@
 }
 
 :root {
-  --gutter-width: 1rem;
-  --gutter-compensation: calc((var(--gutter-width) * 0.5) * -1);
-  --half-gutter-width: calc((var(--gutter-width) * 0.5));
-  --container-sm: 46rem;
-  --container-md: 62rem;
-  --container-lg: 73rem;
-  --container-xl: 88rem;
+  --griddity-gutter-width: 1rem;
+  --griddity-gutter-compensation: calc((var(--griddity-gutter-width) * 0.5) * -1);
+  --griddity-half-gutter: calc((var(--griddity-gutter-width) * 0.5));
+  --griddity-container-sm: 540px;
+  --griddity-container-md: 720px;
+  --griddity-container-lg: 960px;
+  --griddity-container-xl: 1140px;
 }
 
-@custom-media --sm-viewport only screen and (min-width: 48em);
-@custom-media --md-viewport only screen and (min-width: 64em);
-@custom-media --lg-viewport only screen and (min-width: 75em);
-@custom-media --xl-viewport only screen and (min-width: 90em);
+@custom-media --griddity-sm-viewport only screen and (min-width: 576px);
+@custom-media --griddity-md-viewport only screen and (min-width: 768px);
+@custom-media --griddity-lg-viewport only screen and (min-width: 992px);
+@custom-media --griddity-xl-viewport only screen and (min-width: 1200px);
 
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--half-gutter-width, 0.5rem);
-  padding-left: var(--half-gutter-width, 0.5rem);
+  padding-right: var(--griddity-half-gutter, 0.5rem);
+  padding-left: var(--griddity-half-gutter, 0.5rem);
 }
 
-@media (--sm-viewport) {
+@media (--griddity-sm-viewport) {
   .container {
-    max-width: var(--container-sm, 46rem);
+    max-width: var(--griddity-container-sm, 540px);
   }
 }
 
-@media (--md-viewport) {
+@media (--griddity-md-viewport) {
   .container {
-    max-width: var(--container-md, 62rem);
+    max-width: var(--griddity-container-md, 720px);
   }
 }
 
-@media (--lg-viewport) {
+@media (--griddity-lg-viewport) {
   .container {
-    max-width: var(--container-lg, 73rem);
+    max-width: var(--griddity-container-lg, 960px);
   }
 }
 
-@media (--xl-viewport) {
+@media (--griddity-xl-viewport) {
   .container {
-    max-width: var(--container-xl, 88rem);
+    max-width: var(--griddity-container-xl, 1140px);
   }
 }
 
@@ -53,15 +53,15 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--half-gutter-width, 0.5rem);
-  padding-left: var(--half-gutter-width, 0.5rem);
+  padding-right: var(--griddity-half-gutter, 0.5rem);
+  padding-left: var(--griddity-half-gutter, 0.5rem);
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: var(--gutter-compensation, -0.5rem);
-  margin-left: var(--gutter-compensation, -0.5rem);
+  margin-right: var(--griddity-gutter-compensation, -0.5rem);
+  margin-left: var(--griddity-gutter-compensation, -0.5rem);
 }
 
 .no-gutters {
@@ -84,8 +84,8 @@
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: var(--half-gutter-width, 0.5rem);
-  padding-left: var(--half-gutter-width, 0.5rem);
+  padding-right: var(--griddity-half-gutter, 0.5rem);
+  padding-left: var(--griddity-half-gutter, 0.5rem);
 }
 
 .col {
@@ -252,7 +252,7 @@
   margin-left: 91.666667%;
 }
 
-@media (--sm-viewport) {
+@media (--griddity-sm-viewport) {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -385,7 +385,7 @@
   }
 }
 
-@media (--md-viewport) {
+@media (--griddity-md-viewport) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -518,7 +518,7 @@
   }
 }
 
-@media (--lg-viewport) {
+@media (--griddity-lg-viewport) {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
@@ -651,7 +651,7 @@
   }
 }
 
-@media (--xl-viewport) {
+@media (--griddity-xl-viewport) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -900,7 +900,7 @@
   align-self: stretch !important;
 }
 
-@media (--sm-viewport) {
+@media (--griddity-sm-viewport) {
   .flex-sm-row {
     flex-direction: row !important;
   }
@@ -990,7 +990,7 @@
   }
 }
 
-@media (--md-viewport) {
+@media (--griddity-md-viewport) {
   .flex-md-row {
     flex-direction: row !important;
   }
@@ -1080,7 +1080,7 @@
   }
 }
 
-@media (--lg-viewport) {
+@media (--griddity-lg-viewport) {
   .flex-lg-row {
     flex-direction: row !important;
   }
@@ -1170,7 +1170,7 @@
   }
 }
 
-@media (--xl-viewport) {
+@media (--griddity-xl-viewport) {
   .flex-xl-row {
     flex-direction: row !important;
   }
