@@ -7,7 +7,7 @@ Variables
 */
 
 :root {
-  --griddity-gutter-width: 1rem;
+  --griddity-gutter-width: 2rem;
   --griddity-gutter-compensation: calc((var(--griddity-gutter-width) * 0.5) * -1);
   --griddity-half-gutter: calc((var(--griddity-gutter-width) * 0.5));
   --griddity-container-sm: 540px;
@@ -39,8 +39,8 @@ Containers
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--griddity-half-gutter, 0.5rem);
-  padding-left: var(--griddity-half-gutter, 0.5rem);
+  padding-right: var(--griddity-half-gutter, 1rem);
+  padding-left: var(--griddity-half-gutter, 1rem);
 }
 
 @media (--griddity-sm-viewport) {
@@ -71,8 +71,8 @@ Containers
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--griddity-half-gutter, 0.5rem);
-  padding-left: var(--griddity-half-gutter, 0.5rem);
+  padding-right: var(--griddity-half-gutter, 1rem);
+  padding-left: var(--griddity-half-gutter, 1rem);
 }
 
 /*
@@ -82,8 +82,8 @@ Rows and cols
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: var(--griddity-gutter-compensation, -0.5rem);
-  margin-left: var(--griddity-gutter-compensation, -0.5rem);
+  margin-right: var(--griddity-gutter-compensation, -1rem);
+  margin-left: var(--griddity-gutter-compensation, -1rem);
 }
 
 .no-gutters {
@@ -106,8 +106,8 @@ Rows and cols
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: var(--griddity-half-gutter, 0.5rem);
-  padding-left: var(--griddity-half-gutter, 0.5rem);
+  padding-right: var(--griddity-half-gutter, 1rem);
+  padding-left: var(--griddity-half-gutter, 1rem);
 }
 
 .col {
