@@ -21,6 +21,15 @@ Variables
 @custom-media --griddity-lg-viewport only screen and (min-width: 992px);
 @custom-media --griddity-xl-viewport only screen and (min-width: 1200px);
 
+/*
+Clearfix util
+*/
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
 
 /*
 Containers
