@@ -76,7 +76,7 @@ Containers
 }
 
 /*
-Rows and cols
+Rows and gutters
 */
 
 .row {
@@ -96,6 +96,10 @@ Rows and cols
   padding-right: 0;
   padding-left: 0;
 }
+
+/*
+Default, mobile-first cols
+*/
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
@@ -811,7 +815,7 @@ Responsive cols
 }
 
 /*
-Display utils
+Display responsive utils
 */
 
 .d-none {
@@ -953,6 +957,10 @@ Display utils
     display: inline-flex !important;
   }
 }
+
+/*
+Print display utils
+*/
 
 .d-print-block {
   display: none !important;
@@ -1585,6 +1593,18 @@ Float responsive utils
 Text display utils
 */
 
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
 .text-justify {
   text-align: justify !important;
 }
@@ -1598,6 +1618,10 @@ Text display utils
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/*
+Text responsive alignment utils
+*/
 
 .text-left {
   text-align: left !important;
@@ -1657,16 +1681,4 @@ Text display utils
   .text-xl-center {
     text-align: center !important;
   }
-}
-
-.text-lowercase {
-  text-transform: lowercase !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-.text-capitalize {
-  text-transform: capitalize !important;
 }
