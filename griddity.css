@@ -7,19 +7,19 @@ Variables
 */
 
 :root {
-  --griddity-gutter-width: 2rem;
+  --griddity-gutter-width: 3rem;
   --griddity-gutter-compensation: calc((var(--griddity-gutter-width) * 0.5) * -1);
   --griddity-half-gutter: calc((var(--griddity-gutter-width) * 0.5));
-  --griddity-container-sm: 540px;
-  --griddity-container-md: 720px;
-  --griddity-container-lg: 960px;
-  --griddity-container-xl: 1140px;
+  --griddity-container-sm: 552px;
+  --griddity-container-md: 852px;
+  --griddity-container-lg: 1152px;
+  --griddity-container-xl: 1552px;
 }
 
-@custom-media --griddity-sm-viewport only screen and (min-width: 576px);
-@custom-media --griddity-md-viewport only screen and (min-width: 768px);
-@custom-media --griddity-lg-viewport only screen and (min-width: 992px);
-@custom-media --griddity-xl-viewport only screen and (min-width: 1200px);
+@custom-media --griddity-sm-viewport only screen and (min-width: 600px);
+@custom-media --griddity-md-viewport only screen and (min-width: 900px);
+@custom-media --griddity-lg-viewport only screen and (min-width: 1200px);
+@custom-media --griddity-xl-viewport only screen and (min-width: 1600px);
 
 /*
 Clearfix util
