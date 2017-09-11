@@ -10,16 +10,16 @@ Variables
   --griddity-gutter-width: 3rem;
   --griddity-gutter-compensation: calc((var(--griddity-gutter-width) * 0.5) * -1);
   --griddity-half-gutter: calc((var(--griddity-gutter-width) * 0.5));
-  --griddity-container-sm: calc(38rem - var(--griddity-gutter-width));
-  --griddity-container-md: calc(57rem - var(--griddity-gutter-width));
-  --griddity-container-lg: calc(75rem - var(--griddity-gutter-width));
-  --griddity-container-xl: calc(100rem - var(--griddity-gutter-width));
+  --griddity-container-sm: calc(608px - var(--griddity-gutter-width));
+  --griddity-container-md: calc(912px - var(--griddity-gutter-width));
+  --griddity-container-lg: calc(1200px - var(--griddity-gutter-width));
+  --griddity-container-xl: calc(1600px - var(--griddity-gutter-width));
 }
 
-@custom-media --griddity-sm-viewport only screen and (min-width: 38em); /* 608px */
-@custom-media --griddity-md-viewport only screen and (min-width: 57em); /* 912px */
-@custom-media --griddity-lg-viewport only screen and (min-width: 75em); /* 1200px */
-@custom-media --griddity-xl-viewport only screen and (min-width: 100em); /* 1600px */
+@custom-media --griddity-sm-viewport only screen and (min-width: 608px);
+@custom-media --griddity-md-viewport only screen and (min-width: 912px);
+@custom-media --griddity-lg-viewport only screen and (min-width: 1200px);
+@custom-media --griddity-xl-viewport only screen and (min-width: 1600px);
 
 /*
 Clearfix util
