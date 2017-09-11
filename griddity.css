@@ -39,31 +39,31 @@ Containers
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--griddity-half-gutter, 1rem);
-  padding-left: var(--griddity-half-gutter, 1rem);
+  padding-right: var(--griddity-half-gutter);
+  padding-left: var(--griddity-half-gutter);
 }
 
 @media (--griddity-sm-viewport) {
   .container {
-    max-width: var(--griddity-container-sm, 540px);
+    max-width: var(--griddity-container-sm);
   }
 }
 
 @media (--griddity-md-viewport) {
   .container {
-    max-width: var(--griddity-container-md, 720px);
+    max-width: var(--griddity-container-md);
   }
 }
 
 @media (--griddity-lg-viewport) {
   .container {
-    max-width: var(--griddity-container-lg, 960px);
+    max-width: var(--griddity-container-lg);
   }
 }
 
 @media (--griddity-xl-viewport) {
   .container {
-    max-width: var(--griddity-container-xl, 1140px);
+    max-width: var(--griddity-container-xl);
   }
 }
 
@@ -71,8 +71,8 @@ Containers
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--griddity-half-gutter, 1rem);
-  padding-left: var(--griddity-half-gutter, 1rem);
+  padding-right: var(--griddity-half-gutter);
+  padding-left: var(--griddity-half-gutter);
 }
 
 /*
@@ -82,8 +82,8 @@ Rows and gutters
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: var(--griddity-gutter-compensation, -1rem);
-  margin-left: var(--griddity-gutter-compensation, -1rem);
+  margin-right: var(--griddity-gutter-compensation);
+  margin-left: var(--griddity-gutter-compensation);
 }
 
 .no-gutters {
@@ -110,8 +110,8 @@ Default, mobile-first cols
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: var(--griddity-half-gutter, 1rem);
-  padding-left: var(--griddity-half-gutter, 1rem);
+  padding-right: var(--griddity-half-gutter);
+  padding-left: var(--griddity-half-gutter);
 }
 
 .col {
