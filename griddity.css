@@ -186,6 +186,10 @@ Default, mobile-first cols
   max-width: 100%;
 }
 
+.order-first {
+  order: -1;
+}
+
 .order-1 {
   order: 1;
 }
@@ -341,6 +345,9 @@ Responsive cols
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .order-sm-first {
+    order: -1;
+  }
   .order-sm-1 {
     order: 1;
   }
@@ -473,6 +480,9 @@ Responsive cols
   .col-md-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .order-md-first {
+    order: -1;
   }
   .order-md-1 {
     order: 1;
@@ -607,6 +617,9 @@ Responsive cols
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .order-lg-first {
+    order: -1;
+  }
   .order-lg-1 {
     order: 1;
   }
@@ -739,6 +752,9 @@ Responsive cols
   .col-xl-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .order-xl-first {
+    order: -1;
   }
   .order-xl-1 {
     order: 1;
