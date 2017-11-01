@@ -1546,6 +1546,86 @@ Display responsive utils
 }
 
 /*
+Text responsive alignment utils
+*/
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+@media (--griddity-sm-viewport) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+  .text-sm-justify {
+    text-align: justify !important;
+  }
+}
+
+@media (--griddity-md-viewport) {
+  .text-md-left {
+    text-align: left !important;
+  }
+  .text-md-right {
+    text-align: right !important;
+  }
+  .text-md-center {
+    text-align: center !important;
+  }
+  .text-md-justify {
+    text-align: justify !important;
+  }
+}
+
+@media (--griddity-lg-viewport) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
+  }
+  .text-lg-center {
+    text-align: center !important;
+  }
+  .text-lg-justify {
+    text-align: justify !important;
+  }
+}
+
+@media (--griddity-xl-viewport) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+  .text-xl-right {
+    text-align: right !important;
+  }
+  .text-xl-center {
+    text-align: center !important;
+  }
+  .text-xl-justify {
+    text-align: justify !important;
+  }
+}
+
+/*
 Print display utils
 */
 
@@ -1656,110 +1736,4 @@ Screen reader utilities
   clip: auto;
   white-space: normal;
   clip-path: none;
-}
-
-/*
-Text display utils
-*/
-
-.text-lowercase {
-  text-transform: lowercase !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-.text-capitalize {
-  text-transform: capitalize !important;
-}
-
-.text-nowrap {
-  white-space: nowrap !important;
-}
-
-.text-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/*
-Text responsive alignment utils
-*/
-
-.text-left {
-  text-align: left !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-justify {
-  text-align: justify !important;
-}
-
-@media (--griddity-sm-viewport) {
-  .text-sm-left {
-    text-align: left !important;
-  }
-  .text-sm-right {
-    text-align: right !important;
-  }
-  .text-sm-center {
-    text-align: center !important;
-  }
-  .text-sm-justify {
-    text-align: justify !important;
-  }
-}
-
-@media (--griddity-md-viewport) {
-  .text-md-left {
-    text-align: left !important;
-  }
-  .text-md-right {
-    text-align: right !important;
-  }
-  .text-md-center {
-    text-align: center !important;
-  }
-  .text-md-justify {
-    text-align: justify !important;
-  }
-}
-
-@media (--griddity-lg-viewport) {
-  .text-lg-left {
-    text-align: left !important;
-  }
-  .text-lg-right {
-    text-align: right !important;
-  }
-  .text-lg-center {
-    text-align: center !important;
-  }
-  .text-lg-justify {
-    text-align: justify !important;
-  }
-}
-
-@media (--griddity-xl-viewport) {
-  .text-xl-left {
-    text-align: left !important;
-  }
-  .text-xl-right {
-    text-align: right !important;
-  }
-  .text-xl-center {
-    text-align: center !important;
-  }
-  .text-xl-justify {
-    text-align: justify !important;
-  }
 }
