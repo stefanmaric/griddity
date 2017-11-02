@@ -21,8 +21,15 @@
     "url": "git+https://github.com/stefanmaric/griddity.git"
   },
   "scripts": {
+    "build": "postcss griddity.css --map --use autoprefixer postcss-custom-properties postcss-custom-media -o dist/griddity.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "style": "griddity.css",
-  "version": "0.3.0"
+  "version": "0.3.0",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "postcss-cli": "^4.1.1",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.2.0"
+  }
 }
