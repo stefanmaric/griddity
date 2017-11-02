@@ -19,7 +19,7 @@ Variables
 
 :root {
   --griddity-gutter-width: 3rem;
-  --griddity-gutter-compensation: calc((var(--griddity-gutter-width) * 0.5) * -1);
+  --griddity-gutter-compensation: calc(var(--griddity-gutter-width) * -0.5);
   --griddity-half-gutter: calc((var(--griddity-gutter-width) * 0.5));
   --griddity-container-sm: calc(608px - var(--griddity-gutter-width));
   --griddity-container-md: calc(912px - var(--griddity-gutter-width));
