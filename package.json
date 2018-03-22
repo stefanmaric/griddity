@@ -27,9 +27,9 @@
   "style": "griddity.css",
   "version": "0.7.0",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "postcss-cli": "^4.1.1",
+    "autoprefixer": "^8.2.0",
+    "postcss-cli": "^5.0.0",
     "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.2.0"
+    "postcss-custom-properties": "^7.0.0"
   }
 }
