@@ -1,7 +1,7 @@
 /*!
- * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
+ * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -90,7 +90,7 @@ $grid-gutter-width:           30px !default;
 
 @function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
   $next: breakpoint-next($name, $breakpoints);
-  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+  @return if($next, breakpoint-min($next, $breakpoints) - .02px, null);
 }
 
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
@@ -109,6 +109,7 @@ $grid-gutter-width:           30px !default;
 }
 
 // scss/mixins/_grid-framework.scss
+
 
 @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
   %grid-column {
@@ -149,14 +150,12 @@ $grid-gutter-width:           30px !default;
         }
       }
 
-      .order#{$infix}-first {
-        order: -1;
-      }
+      .order#{$infix}-first { order: -1; }
 
-      @for $i from 1 through $columns {
-        .order#{$infix}-#{$i} {
-          order: $i;
-        }
+      .order#{$infix}-last { order: $columns + 1; }
+
+      @for $i from 0 through $columns {
+        .order#{$infix}-#{$i} { order: $i; }
       }
 
       @for $i from 0 through ($columns - 1) {
@@ -245,7 +244,6 @@ $grid-gutter-width:           30px !default;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  clip-path: inset(50%);
   border: 0;
 }
 
@@ -258,7 +256,6 @@ $grid-gutter-width:           30px !default;
     overflow: visible;
     clip: auto;
     white-space: normal;
-    clip-path: none;
   }
 }
 
@@ -312,6 +309,7 @@ $grid-gutter-width:           30px !default;
     .flex#{$infix}-wrap         { flex-wrap: wrap !important; }
     .flex#{$infix}-nowrap       { flex-wrap: nowrap !important; }
     .flex#{$infix}-wrap-reverse { flex-wrap: wrap-reverse !important; }
+    .flex#{$infix}-fill         { flex: 1 1 auto !important; }
 
     .justify-content#{$infix}-start   { justify-content: flex-start !important; }
     .justify-content#{$infix}-end     { justify-content: flex-end !important; }
@@ -377,34 +375,16 @@ $grid-gutter-width:           30px !default;
   }
 }
 
-.d-print-block {
-  display: none !important;
-
-  @media print {
-    display: block !important;
-  }
-}
-
-.d-print-inline {
-  display: none !important;
-
-  @media print {
-    display: inline !important;
-  }
-}
-
-.d-print-inline-block {
-  display: none !important;
-
-  @media print {
-    display: inline-block !important;
-  }
-}
-
-.d-print-none {
-  @media print {
-    display: none !important;
-  }
+@media print {
+  .d-print-none         { display: none !important; }
+  .d-print-inline       { display: inline !important; }
+  .d-print-inline-block { display: inline-block !important; }
+  .d-print-block        { display: block !important; }
+  .d-print-table        { display: table !important; }
+  .d-print-table-row    { display: table-row !important; }
+  .d-print-table-cell   { display: table-cell !important; }
+  .d-print-flex         { display: flex !important; }
+  .d-print-inline-flex  { display: inline-flex !important; }
 }
 
 // scss/utilities/_text.scss
