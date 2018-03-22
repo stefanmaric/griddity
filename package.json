@@ -25,7 +25,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "style": "griddity.css",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "postcss-cli": "^4.1.1",
