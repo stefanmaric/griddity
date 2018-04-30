@@ -18,13 +18,13 @@ Variables
 */
 
 :root {
-  --griddity-gutter-width: 3rem;
+  --griddity-gutter-width: 30px;
   --griddity-gutter-compensation: calc(var(--griddity-gutter-width) * -0.5);
   --griddity-half-gutter: calc((var(--griddity-gutter-width) * 0.5));
-  --griddity-container-sm: calc(576px - var(--griddity-gutter-width));
-  --griddity-container-md: calc(768px - var(--griddity-gutter-width));
-  --griddity-container-lg: calc(992px - var(--griddity-gutter-width));
-  --griddity-container-xl: calc(1200px - var(--griddity-gutter-width));
+  --griddity-container-sm: 540px;
+  --griddity-container-md: 720px;
+  --griddity-container-lg: 960px;
+  --griddity-container-xl: 1140px;
 }
 
 @custom-media --griddity-sm-viewport only screen and (min-width: 576px);
